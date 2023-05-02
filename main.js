@@ -78,40 +78,81 @@ let array = [num1,num2];
 
 
 // ----------PUNTO 6-----------
+/*
+const N = parseInt(prompt('Número de estudiantes'));
+let M = 0;
+let F = 0;
+let alumno = [];
 
-// const N = parseInt(prompt('Número de estudiantes'));
-// let M = 0;
-// let F = 0;
-// let alumno = [];
+for (let i = 0; i < N; i++) {
+    let nombre = prompt('Nombre alumno N°'+(i+1))
+    let sexo = prompt('Sexo alumno N°'+(i+1)+' (F o M)')
+    let nota = parseFloat(prompt('Nota alumno N°'+(i+1)))
 
-// for (let i = 0; i < N; i++) {
-//     let nombre = prompt('Nombre alumno N°'+(i+1))
-//     let sexo = prompt('Sexo alumno N°'+(i+1)+' (F o M)')
-//     let nota = parseFloat(prompt('Nota alumno N°'+(i+1)))
+    alumno.push({
+        nombres:nombre,
+        sexos:sexo,
+        notas:nota
+    });
+}
+let maxNota = 0;
+let mayor;
 
-//     alumno.push({
-//         nombres:nombre,
-//         sexos:sexo,
-//         notas:nota
-//     });
-// }
-// let maxNota = 0;
-// let mayor;
+alumno.forEach(e => {
+    if (e.notas > maxNota) {
+        maxNota = e.notas;
+        mayor = {nombre:e.nombres, nota:e.notas}
+    }
 
-// alumno.forEach(e => {
-//     if (e.notas > maxNota) {
-//         maxNota = e.notas;
-//         mayor = {nombre:e.nombres, nota:e.notas}
-//     }
+    if (e.sexos == 'f' || e.sexos =='F') {
+        F++;
+    }else{
+        M++;
+    }
+});
 
-//     if (e.sexos == 'f' || e.sexos =='F') {
-//         F++;
-//     }else{
-//         M++;
-//     }
-// });
+alert(`La mayor nota la tiene ${mayor.nombre} con ${mayor.nota}.
+Hay ${M} hombres
+Hay ${F} mujeres.
+`)
+*/
 
-// alert(`La mayor nota la tiene ${mayor.nombre} con ${mayor.nota}.
-// Hay ${M} hombres
-// Hay ${F} mujeres.
-// `)
+
+
+// ----------PUNTO 7-----------
+/*
+const articulo = prompt('Nombre del articulo');
+const precio = parseFloat(prompt('Precio del articulo'));
+const cantidad = parseFloat(prompt('Cantidad del producto'));
+
+
+let precioPagar = precio*cantidad
+
+alert(`
+-----------ARTICULO------------
+        ${articulo}
+        ${articulo}
+        ${precio}
+
+
+-----PRECIO TOTAL A PAGAR------
+        ${precioPagar}
+`)
+*/
+
+
+// -------PUNTO 8-------
+/*
+const lado = parseFloat(prompt('Longitud del lado del cuadrado (metros)'));
+const base = parseFloat(prompt('Base del triangulo'));
+const altura = parseFloat(prompt('Altura del triangualo'));
+
+
+let perimetro = lado*4;
+let area = base*altura;
+
+alert(`
+    Perimetro del cuadrado: ${perimetro}m
+    Área del triangulo: ${area}m2
+`)
+*/
