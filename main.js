@@ -156,3 +156,44 @@ alert(`
     Área del triangulo: ${area}m2
 `)
 */
+
+
+
+// --------PUNTO 9--------
+/*
+const N = parseInt(prompt('Número de atletas participantes'));
+let registro = [];
+const record = 15.50;
+for (let i = 0; i < N; i++) {
+    let nombre = prompt('Nombre del atleta');
+    let salto = parseFloat(prompt('Longitud del salto (Metros)'));
+    
+    registro.push({nombre,salto});
+}
+
+const ordenar = registro.sort((a,b)=>{
+    return b.salto - a.salto;
+})
+if (ordenar[0].salto > record) {
+    alert(`
+    Ganadora: ${ordenar[0].nombre} con salto de ${ordenar[0].salto}m.
+    ¡¡¡¡ROMPIO EL RECORD!!!
+    `);
+}else{
+    alert(`
+    Ganadora: ${ordenar[0].nombre} con salto de ${ordenar[0].salto}m.
+    `); 
+}
+*/
+
+// --------PUNTO 10--------
+/*
+let dato = parseInt(prompt('Ingresa el dato'))
+let acumulador = 0;
+
+while (dato != 0) {
+    acumulador+=dato;
+    dato = parseInt(prompt('Ingresa el dato'))
+}
+alert(`La sumatoria de los datos es: ${acumulador}`)
+*/
